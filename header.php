@@ -36,9 +36,6 @@
                     'walker'            => new WP_Bootstrap_Navwalker(),
                 ) );
                 ?>
-                <div>
-                    <?php get_search_form(); ?>
-                </div>
             </div>
         </nav>
     </header>
