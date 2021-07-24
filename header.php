@@ -7,17 +7,7 @@
 <body <?php body_class(); ?>>
     <?php wp_body_open(); ?>
     <header class="container-big">
-        <div id="post-special-slider" class="slick-slider">
-            <?php if( have_rows('hero_slider') ): ?>
-                <?php while( have_rows('hero_slider') ) : the_row(); ?>
-                    <div class="slick-slide">
-                        <img src="<?php the_sub_field('slider_image') ?>">
-                        <p><?php the_sub_field('slider_text') ?></p>
-                    </div>
-      
-                <?php endwhile; ?>
-            <?php endif; ?>
-        </div>
+        
         <nav class="navbar navbar-expand-md navbar-light" role="navigation">
             <div class="container">
                 <!-- Brand and toggle get grouped for better mobile display -->
