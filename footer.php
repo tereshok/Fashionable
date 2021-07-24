@@ -1,12 +1,12 @@
-<div class="container-big">
-  <div>
+<div class="container-big footer-block">
+  <div class="footer-logo-block">
     <?php if(get_field('theme_logo', 'option')) : ?>
       <a href="<?php echo esc_url(home_url()) ?>">
         <img src="<?php esc_url(the_field('theme_logo', 'option')) ?>" alt="<?php bloginfo('name') ?>">
       </a>
     <?php endif; ?>
   </div>
-  <div>
+  <div class="footer-copyright-block">
     <p>
       <?php if(get_field('copyright_before_text', 'option')) : ?>
         <?php esc_html(the_field('copyright_before_text', 'option'))?>

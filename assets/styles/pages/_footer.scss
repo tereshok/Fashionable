@@ -1,0 +1,16 @@
+.footer-block {
+  height: 115px;
+  background-color: $color_black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .footer-logo-block {
+    padding: 0 0 0 55px;
+  }
+
+  .footer-copyright-block {
+    display: flex;
+    padding: 0 40px 0 0;
+  }
+}
