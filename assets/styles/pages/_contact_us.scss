@@ -1,0 +1,37 @@
+.contact-us {
+  height: 380px;
+
+  .contact-us-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-us-first-title {
+    font-size: 50px;
+    font-weight: 300;
+    text-transform: uppercase;
+    padding: 115px 0 0 0;
+  }
+
+  .contact-us-second-title {
+    font-size: 50px;
+    font-weight: 300;
+    text-transform: uppercase;
+    padding: 0 0 15px 0;
+  }
+
+  .contact-us-link {
+    font-size: 16px;
+    font-weight: 700;
+    color: $color_white;
+    background-color: $color_red;
+    text-decoration: none;
+    padding: 10px 35px;
+
+    &:hover {
+      background-color: $color_whiteGrey;
+      color: $color_darkGrey;
+    }
+  }
+}
