@@ -1,14 +1,14 @@
-<section class="container-big" style="background-image: url('<?php esc_url(the_field('contact_section_background')) ?>');">
+<section class="container-big contact-author" style="background-image: url('<?php esc_url(the_field('contact_section_background')) ?>');">
   <div class="container-small">
     <div>
       <?php if(get_field('contact_author_title')) : ?>
-        <h3><?php esc_html(the_field('contact_author_title'))?></h3>
+        <h3 class="contact-author-title"><?php esc_html(the_field('contact_author_title'))?></h3>
       <?php endif; ?>
       <?php if(get_field('contact_author_subtitle')) : ?>
-        <h3><?php esc_html(the_field('contact_author_subtitle'))?></h3>
+        <h3 class="contact-author-subtitle"><?php esc_html(the_field('contact_author_subtitle'))?></h3>
       <?php endif; ?>
     </div>
-    <div class="row">
+    <div class="row contact-block">
         <div class="col-6">
           <?php if(get_field('contact_form_shortcode')) : ?>
             <?php esc_html(the_field('contact_form_shortcode'))?>
