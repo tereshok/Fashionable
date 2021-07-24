@@ -1,10 +1,10 @@
-<section class="container-big">
+<section class="container-big photo-gallery">
   <div>
     <?php if(get_field('gallery_title')) : ?>
-      <h3><?php esc_html(the_field('gallery_title')) ?></h3>
+      <h3 class="gallery-title"><?php esc_html(the_field('gallery_title')) ?></h3>
     <?php endif; ?>
   </div>
-  <div>
+  <div class="gallery-image">
     <?php $images = get_field('gallery_image'); ?>  
       <?php if(get_field('gallery_image')) : ?>
         <?php foreach($images as $image) : ?>  

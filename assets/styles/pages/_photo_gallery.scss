@@ -1,0 +1,17 @@
+.photo-gallery {
+  height: 810px;
+  background-color: $color_red;
+
+  .gallery-title {
+    font-size: 50px;
+    font-weight: 300;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 100px 0;
+  }
+
+  .gallery-image {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
