@@ -1,6 +1,11 @@
 .photo-gallery {
-  height: 810px;
+  min-height: 810px;
   background-color: $color_red;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+
 
   .gallery-title {
     font-size: 50px;
@@ -13,5 +18,12 @@
   .gallery-image {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    margin: -11px 0 0 0;
+    max-width: 1600px;
+  }
+
+  .image-item {
+    flex-basis: 280px;
   }
 }

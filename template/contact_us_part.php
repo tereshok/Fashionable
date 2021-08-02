@@ -1,4 +1,4 @@
-<section class="container-big contact-us" style="background-image: url('<?php esc_url(the_field('contact_us_background')) ?>');">
+<section class="background contact-us" style="background-image: url('<?php esc_url(the_field('contact_us_background')) ?>');">
   <div class="container-small contact-us-container">
     <?php if(get_field('contact_us_first_line')) : ?>
       <h5 class="contact-us-first-title"><?php esc_html(the_field('contact_us_first_line')) ?></h5>

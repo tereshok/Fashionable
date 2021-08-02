@@ -5,31 +5,51 @@
     font-size: 50px;
     font-weight: 300;
     text-transform: uppercase;
-    padding: 100px 0 0 0;
+    padding: 92px 0 0 0;
+    max-width: 770px;
+    line-height: 52px;
   }
 
   .site-subtitle {
     font-size: 18px;
     font-style: italic;
     color: $color_red;
-    padding: 40px 0 60px 0;
+    padding: 28px 0 60px 0;
   }
 
+  .site-content {
+    display: flex;
+  }
+  
   .site-avatar {
-    float: left;
     margin: 0 30px 35px 0;
   }
 
-  .site-text {
+  .site-text, .site-subtext {
     font-size: 14px;
+    padding: 5px 0 0 0;
+
+    @media screen and (max-width: 1024px) {
+      font-size: 18px;
+    }
+
+    @media screen and (max-width: 660px) {
+      font-size: 20px;
+    }
 
     p {
-      padding: 15px 0;
+      line-height: 24px;
+      padding: 0 0 15px 0;
     }
+  }
+
+  .site-subtext {
+    padding: 0;
   }
 
   .site-autograph {
     position: relative;
+    font-family: 'Conv_JennaSue';
 
     .site-autograph-first {
       position: absolute;

@@ -1,5 +1,5 @@
 .contact-author {
-  height: 820px;
+  min-height: 820px;
 
   .contact-author-title {
     font-size: 50px;
@@ -15,6 +15,84 @@
   }
 
   .contact-block {
-    padding: 45px 0 0 0;
+    padding: 60px 0 0 0;
+  }
+
+  .contact-form-block {
+    @media screen and (max-width: 960px) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 0 0 10px 0;
+    }
+  }
+  
+
+  .contact-form {
+    padding: 0 0 0 10px;
+
+    .wpcf7-form-control-wrap input,
+    .wpcf7-form-control-wrap textarea {
+      width: 400px;
+      font-size: 14px;
+      font-style: italic;
+      color: $color_white;
+      border-color: $color_white;
+      background-color: #eaeaeab8;
+      padding: 2.5px 5px;
+    }
+
+    .wpcf7-form-control-wrap textarea {
+      height: 110px;
+    }
+
+    .contact-input {
+      padding: 0 0 5px 0;
+    }
+
+    .contact-submit {
+      display: flex;
+      justify-content: flex-end;
+
+      .contact-button {
+        color: $color_white;
+        background-color: $color_red;
+        font-weight: 700;
+        padding: 9px 18px;
+        border: none;
+      }
+    }
+  }
+
+  .contact-phone-number { 
+    padding: 60px 0 0 25px;
+    
+    img {
+      padding: 0 5px 0 0;
+    }
+  }
+
+  .contact-email {
+    padding: 10px 0 0 25px;
+
+    img {
+      padding: 0 5px 0 0;
+    }
+  }
+
+  .contact-addres {
+    font-weight: 300;
+    letter-spacing: -1.3px;
+    padding: 15px 0 0 20px;
+
+    p {
+      padding: 0 0 8px 0;
+    }
+  }
+
+  .acf-map {
+    height: 352px;
+    width: 97%;
+    margin: 0 0 0 14px;
   }
 }

@@ -1,0 +1,122 @@
+.header-section {
+  max-height: 900px;
+  position: relative;
+
+ 
+  #special-slider img {
+    width: 100%;
+    max-height: 900px;
+  }
+ 
+
+  
+  .hero-img {
+    position: absolute;
+    z-index: 2;
+    top: 15%;
+    left: 40%;
+  }
+  
+  .slider-text {
+    position: absolute;
+    z-index: 3;
+    top: 0;
+    left: 10px;
+  }
+  
+  #my-arrow-next {
+    position: absolute;
+    top: 50px;
+    right: 70px;
+    cursor: pointer;
+  }
+  
+  #my-arrow-prev {
+    position: absolute;
+    top: 50px;
+    right: 35px;
+    cursor: pointer;
+  }
+  
+  .navigation-section {
+    position: absolute;
+    bottom: 0;
+    z-index: 9;
+    width: 100%;
+    background-color: $color_black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 11px 200px 11px 210px;
+
+    .nav-button {
+      display: none;
+      position: absolute;
+      padding: 7px 15px;
+      background: #dee2e6;
+      border-radius: 5px;
+      top: 30%;
+      right: 13%;
+
+      span {
+        color: $color_black;
+      }
+
+      @media screen and (max-width: 1100px){
+        display: flex;
+        flex-direction: column;
+      }
+    }
+
+    .hide {
+      display: none !important;
+    }
+
+    .mob-menu {
+      position: absolute;
+      z-index: 10;
+      padding: 45px 60px;
+      min-height: 100%;
+      top: -120px;
+      left: 0;
+      background-color: #eeec;
+
+      .nav-item {
+        font-size: 36px;
+        padding: 0 0 15px 0;
+
+        a {
+          color: $color_black;
+        }
+      }
+    }
+  
+    .nav-section {
+      display: flex;
+  
+      @media screen and (max-width: 1100px){
+        display: none;
+      }
+  
+  
+      .nav-item {
+        padding: 0 0 0 30px;
+        font-family: 'Raleway', sans-serif;
+  
+        a {
+          font-size: 16px;
+          text-transform: uppercase;
+          color: $color_white;
+  
+          &:hover {
+            color: $color_red;
+            text-decoration: none;
+            padding-bottom: 16px;
+            border-bottom: 3px solid;
+          }
+        }
+      }
+    }
+  }
+}

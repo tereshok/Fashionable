@@ -4,6 +4,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 0 160px 0 165px;
 
   .footer-logo-block {
     padding: 0 0 0 55px;
@@ -12,5 +13,21 @@
   .footer-copyright-block {
     display: flex;
     padding: 0 40px 0 0;
+    font-size: 13px;
+
+    p {
+      padding: 0 0 0 3px;
+
+      a {
+        color: $color_white;
+
+        &:hover {
+          color: $color_red;
+          text-decoration: none;
+          border-bottom: 2px solid $color_red;
+          padding: 0 0 5px 0;
+        }
+      }
+    }
   }
 }
